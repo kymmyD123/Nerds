@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Учебный проект Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="container">
-    <header class="main-header">
+<header class="main-header">
+    <div class="container">
+        <h2 class="visually-hidden">Шапка</h2>
         <div class="header-menu-wrapper">
 
             <span class="main-logo">
@@ -86,86 +89,99 @@
                 </div>
             </div>
         </div>
+    </div>
+</header>
+<div class="container">
+<main>
 
-    </header>
+    <section class="product-content">
+        <h2 class="visually-hidden">Наши товары</h2>
+        <article class="content-item">
+            <img src="img/web-sites.jpg" alt="Web-site" class="product-picture">
+            <h2 class="product-caption">Веб-сайты</h2>
+            <p class="product-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="button product-button red">Заказать</a>
+        </article>
+        <article class="content-item">
+            <img src="img/apps.jpg" alt="App" class="product-picture">
+            <h2 class="product-caption">Приложения</h2>
+            <p class="product-description">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="button product-button green">Заказать</a>
+        </article>
+        <article class="content-item">
+            <img src="img/presentations.jpg" alt="Presentation" class="product-picture">
+            <h2 class="product-caption">Презентация</h2>
+            <p class="product-description">Вы даже не подозреваете,
+                насколько вы изумительны!</p>
+            <a href="#" class="button product-button yellow">Заказать</a>
+        </article>
+    </section>
 
-    <main>
-
-        <section class="product-content">
-            <h2 class="visually-hidden">Наши товары</h2>
-            <article class="content-item">
-                <img src="" alt="" class="product-picture">
-                <h2 class="product-caption">Веб-сайты</h2>
-                <p class="product-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                <a href="#" class="button product-button">Заказать</a>
-            </article>
-            <article class="content-item">
-                <img src="" alt="" class="product-picture">
-                <h2 class="product-caption">Приложения</h2>
-                <p class="product-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-                <a href="#" class="button product-button">Заказать</a>
-            </article>
-            <article class="content-item">
-                <img src="" alt="" class="product-picture">
-                <h2 class="product-caption">Презентация</h2>
-                <p class="product-description">Вы даже не подозреваете,
-                    насколько вы изумительны!</p>
-                <a href="#" class="button product-button">Заказать</a>
-            </article>
+    <div class="about-us-wrapper">
+        <section class="about-us">
+            <h2 class="visually-hidden">Немного о нас</h2>
+            <h1 class="about-us-caption">Мы — маленькая, но гордая
+                дизайн-студия из Краснодара.</h1>
+            <p class="about-us-description">
+                Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                превыше креатива. Работаем не покладая рук, как роботы.
+            </p>
+            <b class="list-caption">Выполняем заказы на разработку:</b>
+            <ul class="about-us-list">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
         </section>
 
-        <div class="about-us-wrapper">
-            <section class="about-us">
-                <h2 class="visually-hidden">Немного о нас</h2>
-                <h1 class="about-us-caption">Мы — маленькая, но гордая
-                    дизайн-студия из Краснодара.</h1>
-                <p class="about-us-description">
-                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-                    превыше креатива. Работаем не покладая рук, как роботы.
-                </p>
-                <b class="list-caption">Выполняем заказы на разработку:</b>
-                <ul class="about-us-list">
-                    <li>Веб-сайтов любой сложности</li>
-                    <li>Мобильных приложений для iOS и Android</li>
-                    <li>Слайдшоу и видео для корпоративных презентаций</li>
-                </ul>
-            </section>
+        <section class="stats">
+            <img src="img/nerds-illustration.jpg" alt="NERDS">
+            <span>С 2004 года любим точность во всем:</span>
+            <div class="our-stats">
+                <div class="stats-list">
+                    <b>146%</b>
+                    <p>Уровень самоотдачи</p>
+                </div>
+                <div class="stats-list">
+                    <b>100%</b>
+                    <p>Соблюдение сроков</p>
+                </div>
+                <div class="stats-list">
+                    <b>50%</b>
+                    <p>Минимальная предоплата</p>
+                </div>
+            </div>
+        </section>
 
-            <section class="stats">
+    </div>
 
-            </section>
+    <h2 class="visually-hidden">Наши клиенты</h2>
+    <ul class="our-clients">
+        <li>
+            <a href="https://htmlacademy.ru">
+                <img src="img/htmlacademy-logo.png" alt="htmlacademy">
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="img/barbershop-logo.png" alt="barbershop">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/pink-logo.png" alt="pink">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/mishka-logo.png" alt="mishka">
+            </a>
+        </li>
+    </ul>
 
-        </div>
-
-        <h2 class="visually-hidden">Наши клиенты</h2>
-        <ul class="our-clients">
-            <li>
-                <a href="https://htmlacademy.ru">
-                    <img src="img/htmlacademy-logo.png" alt="htmlacademy">
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="img/barbershop-logo.png" alt="barbershop">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/pink-logo.png" alt="pink">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/mishka-logo.png" alt="mishka">
-                </a>
-            </li>
-        </ul>
-
-    </main>
-
+</main>
 </div>
-
-<div class="map">
+<section class="map">
 
     <h2 class="visually-hidden">Карта</h2>
     <iframe
@@ -180,38 +196,37 @@
             ул. Б. Конюшенная, д. 19/8
         </b>
         <b>тел. 8 812 450-25-25</b>
-        <a class="button address-button" href="form.html">Напишите нам</a>
+        <a class="button address-button red" href="form.html">Напишите нам</a>
     </div>
 
+</section>
+
+<footer class="container main-footer">
+    <h2 class="visually-hidden">Подвал</h2>
+    <ul class="footer-left social-networks">
+        <li class="social-network social-vkontakte">
+            <a href="#">
+                Вконтакте
+            </a>
+        </li>
+        <li class="social-network social-facebook">
+            <a href="#">
+                Фэйсбук
+            </a>
+        </li>
+        <li class="social-network social-instagram">
+            <a href="#">
+                Инстаграм
+            </a>
+        </li>
+    </ul>
+
+    <div class="footer-right">
+        <p class="footer-right-caption">Давайте дружить, это выгодно!</p>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+    </div>
+</footer>
 </div>
-<div class="container">
-
-    <footer class="main-footer">
-        <h2 class="visually-hidden">Подвал</h2>
-        <ul class="footer-left social-networks">
-            <li class="social-vkontakte">
-                <a href="#">
-                    Вконтакте
-                </a>
-            </li>
-            <li class="social-facebook">
-                <a href="#">
-                    Фэйсбук
-                </a>
-            </li>
-            <li class="social-instagram">
-                <a href="#">
-                    Инстаграм
-                </a>
-            </li>
-        </ul>
-
-        <div class="footer-right">
-            <b class="footer-right-caption">Давайте дружить, это выгодно!</b>
-            <span>Скидка 10% для друзей из социальных сетей.</span>
-        </div>
-    </footer>
-
-</div>
+<script src="js/script.js"></script>
 </body>
 </html>
