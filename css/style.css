@@ -42,6 +42,37 @@ body {
     font-weight: 500;
 }
 
+.main-menu ul {
+    position: relative;
+}
+
+.main-menu li:hover::before {
+    content: "";
+    width: 74px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 104px;
+    background-color: #fb565a;
+}
+
+.user-menu-cart {
+    position: relative;
+}
+
+.user-menu-cart a::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    display: block;
+    background-image: url("../img/cart-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
 .header-menu-wrapper {
     display: flex;
     justify-content: space-between;
@@ -149,19 +180,19 @@ body {
 .slide:nth-child(1) {
     background-image: url("../img/slider-bg.png");
     background-repeat: no-repeat;
-    background-position: 100% -100px;
+    background-position: 100% 40px;
 }
 
 .slide:nth-child(2) {
     background-image: url("../img/slider-bg-2.png");
     background-repeat: no-repeat;
-    background-position: 100% -100px;
+    background-position: 100% 40px;
 }
 
 .slide:nth-child(3) {
     background-image: url("../img/slider-bg-3.png");
     background-repeat: no-repeat;
-    background-position: 100% -100px;
+    background-position: 100% 40px;
 }
 
 .slide {
@@ -222,6 +253,10 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
+}
+
+.sorting a:hover {
+    color: #000;
 }
 
 .range-price {
@@ -321,6 +356,98 @@ body {
 
 .filter-item-products {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.filter-group {
+    position: relative;
+}
+
+.filter-item-position {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.filter-group-radio {
+    margin-bottom: 10px;
+}
+
+.filter-item input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a6a6a6;
+    border-radius: 50%;
+    left: -30px;
+    top: -1px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.filter-item input[type="radio"] + label:hover::before {
+    border-color: #a6a6a6;
+}
+
+.filter-item input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #a6a6a6;
+    border-radius: 50%;
+}
+
+.filter-item input[type="radio"]:checked + label:hover::after {
+    background-color: #a6a6a6;
+}
+
+
+.filter-group-checkbox {
+    margin-bottom: 10px;
+}
+
+.filter-item input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../img/checkbox-off.svg") 0 0 no-repeat;
+    opacity: 0.8;
+    border-radius: 3px;
+    left: -30px;
+    top: -2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.filter-item input[type="checkbox"] + label:hover::before {
+    opacity: 1;
+}
+
+.filter-item input[type="checkbox"]:checked + label::before {
+    background: url("../img/checkbox-on.svg") 0 0 no-repeat;
+}
+
+.filter-item input[type="checkbox"]:disabled + label,
+.filter-item input[type="radio"]:disabled + label {
+    opacity: 0.4;
+}
+.button-accept {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: #eeeeee;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .catalog {
@@ -695,3 +822,9 @@ body {
     line-height: 36px;
     margin-bottom: 10px;
 }
+
+
+
+
+
+
