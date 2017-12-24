@@ -42,17 +42,39 @@ body {
     font-weight: 500;
 }
 
+.main-menu a:hover,
+.user-menu a:hover {
+    color: #ff5a60;
+}
+
+.main-menu a:focus,
+.user-menu a:focus {
+    color: #bababa;
+}
+
+
 .main-menu ul {
     position: relative;
 }
 
-.main-menu li:hover::before {
+.main-menu li:active::before {
     content: "";
     width: 74px;
     height: 2px;
     display: block;
     position: absolute;
     top: 104px;
+    background-color: #fb565a;
+}
+
+.user-menu li:active::before {
+    content: "";
+    width: 108px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -30px;
     background-color: #fb565a;
 }
 
@@ -185,6 +207,15 @@ body {
     text-decoration: none;
     background: #fb565a;
     border-radius: 3px;
+}
+
+.slide .btn:hover {
+    background-color: #e74246;
+}
+
+.slide .btn:focus {
+    background-color: #d8373c;
+    color: #e5918f;
 }
 
 .slide:nth-child(1) {
@@ -462,6 +493,16 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    outline: none;
+}
+
+.button-accept:hover {
+    background-color: #dfdfdf;
+}
+
+.button-accept:focus {
+    background-color: #d5d5d5;
+    color: #acacac;
 }
 
 .catalog {
@@ -494,6 +535,7 @@ body {
     z-index: 2;
     width: 360px;
     height: 41px;
+    cursor: pointer;
 }
 
 .catalog-item::before {
@@ -508,6 +550,7 @@ body {
     z-index: 2;
     width: 360px;
     height: 41px;
+    cursor: pointer;
 }
 
 .site-promo-wrapper {
@@ -567,6 +610,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .catalog-item a,
@@ -640,12 +684,39 @@ body {
     background-color: #fb565a;
 }
 
+.red:hover {
+    background-color: #e74246;
+}
+
+.red:focus {
+    background-color: #d8373c;
+    color: #e5918f;
+}
+
 .green {
     background-color: #00ca74;
 }
 
+.green:hover {
+    background-color: #01bc6d;
+}
+
+.green:focus {
+    background-color: #00aa63;
+    color: #69cc9d;
+}
+
 .yellow {
     background-color: #efc84a;
+}
+
+.yellow:hover {
+    background-color: #eab535;
+}
+
+.yellow:focus {
+    background-color: #e6a823;
+    color: #ecc173;
 }
 
 .product-content::before {
@@ -797,17 +868,6 @@ body {
     position: relative;
 }
 
-.clients::before {
-    content: "";
-    display: block;
-    position: absolute;
-    right: -45px;
-    top: 20px;
-    width: 2px;
-    height: 50px;
-    background-color: #eeeeee;
-}
-
 .map {
     margin-top: 80px;
 }
@@ -922,6 +982,17 @@ body {
     height: 80px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.social-network a:hover::after {
+    content: "";
+    background-color: #e74246;
+}
+
+.social-network a:focus::after {
+    content: "";
+    background-color: #d8373c;
+
 }
 
 .social-vkontakte a::after {
@@ -1177,6 +1248,3 @@ textarea {
     -webkit-animation: shake 0.6s;
     animation: shake 0.6s;
 }
-
-
-
