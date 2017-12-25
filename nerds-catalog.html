@@ -15,7 +15,7 @@
 
             <span class="main-logo">
                 <a href="index.html">
-                    <img src="img/nerds-logo.svg" width="160" height="70" alt="" class="logo">
+                    <img src="img/nerds-logo.svg" width="160" height="70" alt="logo" class="logo">
                 </a>
             </span>
 
@@ -60,7 +60,7 @@
 <div class="container">
     <main class="main-part">
         <form action="form.php" method="GET">
-            <div class="range-filter">
+            <fieldset class="range-filter">
                 <legend class="range-price">Стоимость:</legend>
                 <div class="range-controls">
                     <div class="scale">
@@ -73,7 +73,7 @@
                     <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                     <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
                 </div>
-            </div>
+            </fieldset>
             <fieldset class="filter-item">
                 <legend class="range-price">Сетка:</legend>
                 <ul class="filter-item-position">
@@ -158,7 +158,7 @@
             </div>
             <article class="catalog-item-1">
                 <a href="#" class="catalog-item-link">
-                    <img class="catalog-item-picture" src="img/catalog-item-sedona.jpg">
+                    <img class="catalog-item-picture" src="img/catalog-item-sedona.jpg" alt="catalog-item">
                 </a>
                 <div class="site-promo-wrapper">
                     <h3 class="catalog-item-title">Sedona</h3>
@@ -168,7 +168,7 @@
             </article>
             <article class="catalog-item">
                 <a href="#" class="catalog-item-link">
-                    <img class="catalog-item-picture" src="img/catalog-item-pink.jpg">
+                    <img class="catalog-item-picture" src="img/catalog-item-pink.jpg" alt="catalog-item">
                 </a>
                 <div class="site-promo-wrapper">
                     <h3 class="catalog-item-title">Pink app</h3>
@@ -178,7 +178,7 @@
             </article>
             <article class="catalog-item">
                 <a href="#" class="catalog-item-link">
-                    <img class="catalog-item-picture" src="img/catalog-item-barbershop.jpg">
+                    <img class="catalog-item-picture" src="img/catalog-item-barbershop.jpg" alt="catalog-item">
                 </a>
                 <div class="site-promo-wrapper">
                     <h3 class="catalog-item-title">Barbershop</h3>
@@ -188,7 +188,7 @@
             </article>
             <article class="catalog-item">
                 <a href="#" class="catalog-item-link">
-                    <img class="catalog-item-picture" src="img/catalog-item-mishka.jpg">
+                    <img class="catalog-item-picture" src="img/catalog-item-mishka.jpg" alt="catalog-item">
                 </a>
                 <div class="site-promo-wrapper">
                     <h3 class="catalog-item-title">Mishka</h3>
@@ -198,7 +198,7 @@
             </article>
             <article class="catalog-item">
                 <a href="#" class="catalog-item-link">
-                    <img class="catalog-item-picture" src="img/catalog-item-aplus.jpg">
+                    <img class="catalog-item-picture" src="img/catalog-item-aplus.jpg" alt="catalog-item">
                 </a>
                 <div class="site-promo-wrapper">
                     <h3 class="catalog-item-title">A plus</h3>
@@ -208,7 +208,7 @@
             </article>
             <article class="catalog-item">
                 <a href="#" class="catalog-item-link">
-                    <img class="catalog-item-picture" src="img/catalog-item-kvast.jpg">
+                    <img class="catalog-item-picture" src="img/catalog-item-kvast.jpg" alt="catalog-item">
                 </a>
                 <div class="site-promo-wrapper">
                     <h3 class="catalog-item-title">Kbact</h3>
@@ -288,22 +288,22 @@
         <div class="form-group">
             <input class="form-input form-input-1" id="text" type="text" name="login">
             <label class="form-label" for="text">Ваше имя:</label>
-            <label class="form-label-inside" for="text" type="text">Представьтесь пожалуйста</label>
+            <label class="form-label-inside" for="text">Представьтесь пожалуйста</label>
         </div>
         <div class="form-group">
             <input class="form-input form-input-2" id="email-answer" type="email" name="email">
             <label class="form-label" for="email-answer">Ваш e-mail:</label>
-            <label class="form-label-inside" for="text" type="text">Для отправки ответа</label>
+            <label class="form-label-inside" for="text">Для отправки ответа</label>
         </div>
         <div class="form-group form-input-3">
             <textarea class="form-input" name="comment" id="comment"></textarea>
             <label class="form-label" for="comment">Текст письма:</label>
-            <label class="form-label-inside" for="text" type="text">В свободной форме</label>
+            <label class="form-label-inside" for="text">В свободной форме</label>
         </div>
         <button class="button red" type="submit">Отправить</button>
     </form>
     <button class="close-button" type="button">Закрыть</button>
 </section>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
